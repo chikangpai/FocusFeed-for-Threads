@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFeed for Threads</title>
+    <link rel="stylesheet" href="src/popup.css">
+  </head>
+  <body>
+    <div class="header">
+      <h3>FocusFeed Whitelist</h3>
+      <div class="toggle-container">
+        <label for="whitelist-toggle">Filter</label>
+        <input type="checkbox" id="whitelist-toggle" />
+      </div>
+    </div>
+    <form>
+      <input type="text" id="handle" placeholder="Enter @handle" />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="list"></ul>
+    <script type="module" src="src/popup.ts"></script>
+  </body>
+</html> 

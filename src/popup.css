@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  width: 250px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-container label {
+    margin-right: 5px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+} 

@@ -1,0 +1,16 @@
+{
+  "name": "focusfeed-for-threads",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite -c vite.popup.config.ts",
+    "build": "vite build -c vite.popup.config.ts && vite build -c vite.content.config.ts"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.251",
+    "@types/node": "^24.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}

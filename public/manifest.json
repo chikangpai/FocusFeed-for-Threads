@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "FocusFeed for Threads",
+  "version": "0.1.0",
+  "description": "Hide recommendations and only show posts from your chosen accounts on threads.net or threads.com",
+  "icons": { "128": "icon.png" },
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://www.threads.net/*", "https://www.threads.com/*"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.threads.net/*", "https://www.threads.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+} 
